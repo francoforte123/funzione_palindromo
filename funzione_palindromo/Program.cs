@@ -5,7 +5,6 @@ Console.WriteLine("\n");
 Console.WriteLine("you have insert this text= " + text);
 
 String resultText = " ";
-String readyText = "anna";
 
 for (int i = text.Length; i > 0; i--)
 {
@@ -14,7 +13,7 @@ for (int i = text.Length; i > 0; i--)
 
 Console.WriteLine("the result text is= " + resultText);
 
-if (text == readyText)
+if (text == resultText)
 {
     Console.WriteLine("\nthe insert text is polindrome");
 }
