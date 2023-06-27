@@ -1,19 +1,19 @@
 ﻿Console.Write("insert the text= ");
-String text = Console.ReadLine();
+String Text = Console.ReadLine();
 
 Console.WriteLine("\n");
-Console.WriteLine("you have insert this text= " + text);
+Console.WriteLine("you have insert this text= " + Text);
 
-String resultText = " ";
+String ResultText = " ";
 
-for (int i = text.Length; i > 0; i--)
+for (int i = Text.Length; i > 0; i--)
 {
-    resultText += text[i - 1];
+    ResultText += Text[i - 1];
 }
 
-Console.WriteLine("the result text is= " + resultText);
+Console.WriteLine("the result text is= " + ResultText);
 
-if (text == resultText)
+if (string.Equals(Text, ResultText, StringComparison.OrdinalIgnoreCase)) 
 {
     Console.WriteLine("\nthe insert text is polindrome");
 }
